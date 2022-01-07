@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f3f3f3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/search_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"
+            android:src="@mipmap/it_back" />
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/search_iv_back"
+            android:background="@drawable/dialog_btn_bg"
+            android:hint="@string/please_search_info"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/search_iv_sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:onClick="onClick"
+            android:src="@mipmap/search" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/grey_f3f3f3"
+        android:dividerHeight="6dp" />
+
+    <TextView
+        android:id="@+id/search_tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:drawableTop="@mipmap/it_searchtext"
+        android:gravity="center"
+        android:text="@string/date_empty"
+        android:textSize="20sp" />
+
+</LinearLayout>

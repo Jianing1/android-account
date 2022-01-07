@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/home0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#119F1515">
+
+        <RelativeLayout
+            android:id="@+id/main_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#9F1515">
+
+            <Button
+                android:id="@+id/main_btn_more"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_drag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="130dp"
+                android:layout_toRightOf="@+id/main_btn_more"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/main_iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@mipmap/search" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/main_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_top_layout"
+            android:background="@color/grey_f3f3f3"
+            android:divider="@null"
+            android:dividerHeight="6dp"
+            android:padding="10dp"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/home5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/frame">
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/home" />
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_home"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:text="主页"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/main_btn_edit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/add" />
+
+            <Button
+                android:id="@+id/btn_my"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@id/main_btn_edit"
+                android:background="@drawable/my" />
+
+            <TextView
+                android:id="@+id/tv_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_my"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/main_btn_edit"
+                android:text="我的"
+                android:textSize="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

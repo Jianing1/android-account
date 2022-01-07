@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyActivity">
+
+    <RelativeLayout
+        android:id="@+id/my1"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_my_info_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="我的信息"
+                        android:textColor="@color/skin_text_white"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="103dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="19dp">
+
+                    <ImageView
+                        android:id="@+id/img_header"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@mipmap/header" />
+
+                    <TextView
+                        android:id="@+id/my1_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="记账宝"
+                        android:textColor="@color/skin_text_white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <ImageView
+                        android:id="@+id/img_tel1"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/tel" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/img_tel1"
+                        android:text="我的电话"
+                        android:textColor="#404040"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/my1_tel"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/back0"
+                        android:gravity="center"
+                        android:text="10086"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/back0"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_left_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/grey_f3f3f3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <ImageView
+                        android:id="@+id/img_email1"
+                        android:layout_width="28dp"
+                        android:layout_height="38dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/email" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/img_email1"
+                        android:text="我的邮箱"
+                        android:textColor="#404040"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/my1_email"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/back"
+                        android:gravity="center"
+                        android:text="zs@qq.com"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_left_arrow" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEEEEE" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/my1_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_my_info_bg"
+            android:onClick="onClick"
+            android:text="返回" />
+    </RelativeLayout>
+</RelativeLayout>
